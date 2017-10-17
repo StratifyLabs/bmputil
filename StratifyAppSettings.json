@@ -2,7 +2,7 @@
     "LocalBuild": "build_release_armv7em_fpu",
     "LocalInstallPath": "/app/.install",
     "LocalIsRam": false,
-    "LocalIsStartup": true,
+    "LocalIsStartup": false,
     "LocalProjectId": "",
     "buildprefix": "build_",
     "description": "bmputil is a program for converting BMP files to stratify graphics bitmap files (*.sgb).",
@@ -11,8 +11,8 @@
     "name": "bmputil",
     "permissions": "public",
     "publisher": "Stratify Labs, Inc",
-    "ram": 32768,
+    "ram": 0,
     "tags": "util",
     "type": "StratifyApp",
-    "version": "0.1"
+    "version": "0.2"
 }

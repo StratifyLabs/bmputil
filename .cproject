@@ -30,7 +30,7 @@
 					<stringMacro name="BUILD_FLOAT" type="VALUE_TEXT" value="."/>
 					<stringMacro name="BUILD_NAME" type="VALUE_TEXT" value="Unused"/>
 					<stringMacro name="BUILD_ARCH" type="VALUE_TEXT" value="armv7-m"/>
-					<stringMacro name="RAM_SIZE" type="VALUE_TEXT" value="4096"/>
+					<stringMacro name="RAM_SIZE" type="VALUE_TEXT" value="32768"/>
 				</macros>
 				<externalSettings/>
 				<extensions>
@@ -66,8 +66,8 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.565127389" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
 								<option id="gnu.cpp.link.option.nostdlibs.1851377052" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.link.option.libs.1424286330" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
-									<listOptionValue builtIn="false" value="app"/>
-									<listOptionValue builtIn="false" value="stratify_crt"/>
+									<listOptionValue builtIn="false" value="api"/>
+									<listOptionValue builtIn="false" value="sos_crt"/>
 								</option>
 								<option id="gnu.cpp.link.option.flags.1464609774" name="Linker flags" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="-Wl,-Map,${ProjName}.map,--defsym=_app_ram_size=${RAM_SIZE},--gc -Tldscripts/app.ld -u crt" valueType="string"/>
 								<option id="gnu.cpp.link.option.nostart.740808621" name="Do not use standard start files (-nostartfiles)" superClass="gnu.cpp.link.option.nostart" useByScannerDiscovery="false" value="true" valueType="boolean"/>
@@ -117,7 +117,7 @@
 					<stringMacro name="BUILD_NAME" type="VALUE_TEXT" value="Unused"/>
 					<stringMacro name="BUILD_FLOAT" type="VALUE_TEXT" value="fpu/fpv5-sp-d16"/>
 					<stringMacro name="BUILD_ARCH" type="VALUE_TEXT" value="armv7e-m"/>
-					<stringMacro name="RAM_SIZE" type="VALUE_TEXT" value="4096"/>
+					<stringMacro name="RAM_SIZE" type="VALUE_TEXT" value="32768"/>
 				</macros>
 				<externalSettings/>
 				<extensions>
@@ -152,9 +152,9 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.2141023932" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.2096686216" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
 								<option id="gnu.cpp.link.option.nostdlibs.1161957413" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" value="true" valueType="boolean"/>
-								<option id="gnu.cpp.link.option.libs.1796428434" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" value="app"/>
-									<listOptionValue builtIn="false" value="stratify_crt"/>
+								<option id="gnu.cpp.link.option.libs.1796428434" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value="api"/>
+									<listOptionValue builtIn="false" value="sos_crt"/>
 								</option>
 								<option id="gnu.cpp.link.option.flags.673939258" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-Wl,-Map,${ProjName}.map,--defsym=_app_ram_size=${RAM_SIZE},--gc -Tldscripts/app.ld -u crt" valueType="string"/>
 								<option id="gnu.cpp.link.option.nostart.1951725097" name="Do not use standard start files (-nostartfiles)" superClass="gnu.cpp.link.option.nostart" value="true" valueType="boolean"/>
